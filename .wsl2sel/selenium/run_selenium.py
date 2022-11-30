@@ -18,7 +18,7 @@ chrome_options.add_argument("--no-sandbox")
 
 # Set path to chromedriver as per your configuration
 homedir = os.path.expanduser("~")
-webdriver_service = Service(f"{homedir}/chromedriver/stable/chromedriver")
+webdriver_service = Service("usr/bin/chromdriver")
 
 # Choose Chrome Browser
 browser = webdriver.Chrome(service=webdriver_service, options=chrome_options)
